@@ -1,0 +1,15 @@
+#include <stdio.h>
+main(){
+	int *p ;
+	int i = 10;
+	p= (int *)10000;
+	printf("%d \n", p); // 포인터 변수 p의 절대주소 
+		printf("%d \n", &p); // 포인터 변수 p의 주소 
+	p= &i;
+	printf("%d \n", *p); // 포인터 변수 p가 기리키는 값 
+	printf("%d \n",&p); // 포인터 변수p의 주소	
+	printf("%d \n",p); // 포인터 변수 p에 담긴 변수i의 주소 값  
+ 
+	printf("%d \n",&i); // 변수  i의 주소 
+	printf("%d \n",i); // 변수 i의 값 
+} // 포인터 맛보기
